@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-sacle=1.0">
+        <meta name="description" content="Adjacent Selectors CSS">   
+        <title>Adjacent Sibling Selectors CSS</title>
+        <style type="text/css">
+            /*
+                selector + selector (Child){
+                    property: value1; ==> Declaration
+                    property: value2; ==> Declaration
+
+                }
+            */
+          
+            /*Adjacent not parent to child*/
+            div + a{
+                color:red;
+            }
+                  
+        </style>
+    </head>
+    
+    <body>
+        <p>This is a <a href="">paragraph </a> of text.</p>
+        
+        <a href="">paragraph </a>
+        
+        <hr>
+        
+        <div>
+            <a href="">Lorem Ipsum</a>
+            
+            <p>
+                <a href="">Lorem Ipsum</a>
+                This is some text.
+            </p>
+                      
+        </div>
+        <div>
+              This is some text.
+        </div>
+        <a href="">Lorem Ipsum</a>         
+        <h1>This is another TAG.</h1>
+        <a href="">Lorem Ipsum</a>          
+    </body>
+</html>
