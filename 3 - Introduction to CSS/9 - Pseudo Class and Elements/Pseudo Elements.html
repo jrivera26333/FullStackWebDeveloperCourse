@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-sacle=1.0">
+        <meta name="description" content="Pseduo Elements Selectors CSS">   
+        <title>Pseduo Elements Selectors CSS</title>
+        <style type="text/css">
+            /*
+            selector:: pseudo Elements{
+                property: value1; ==> Declaration
+                property: value2; ==> Declaration
+                
+            }
+            */
+            
+            h1::after{
+                content: "!!!"
+            }
+            
+            P::first-letter{
+                font-size: 200%
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Inline CSS means writing CSS rules inside the html tags -->
+        <h1>Heading</h1>
+        <p>This is a test which has first letter bigger</p>
+    </body>
+</html>
