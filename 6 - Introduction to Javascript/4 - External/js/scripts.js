@@ -1,0 +1,1 @@
+alert("This is called from Scripts.js file");
